@@ -2,6 +2,6 @@
 
 * [Introduction](README.md)
 * [PHP](array.md)
-   * String
+   * [String](string.md)
 * [Java](java.md)
 
