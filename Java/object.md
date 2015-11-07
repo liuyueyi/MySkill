@@ -55,6 +55,7 @@ public class Varags {
     
     public static void main(String[] args) {
         test(5, "english book", "cook book");
+        test(5, new String[]{"123book", "456read"});
     }
 }
 ```
