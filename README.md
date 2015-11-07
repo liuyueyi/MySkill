@@ -7,7 +7,7 @@ gitbook 生成网页的方法：
 在文件目录下执行：
 `gitbook server -p 8080`
 
-前置条件：
+前置条件：拥有gitbook命令
 
 1. 安装nodejs
 2. sudo npm install gitbook
