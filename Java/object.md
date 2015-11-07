@@ -59,6 +59,7 @@ public class Varags {
     }
 }
 ```
+***
 
 ## 二、Lambda表达式
 > JDK8已上才支持的版本
@@ -84,3 +85,5 @@ interface TT {
     public String get(String name);
 }
 ```
+
+
