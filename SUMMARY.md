@@ -5,7 +5,7 @@
    * [String](string.md)
    * [Array](array.md)
    * [Json](json.md)
-   * [Date](datemd.md)
+   * [Date](date.md)
 * Java
    * [Properties](properties.md)
 * Tools
