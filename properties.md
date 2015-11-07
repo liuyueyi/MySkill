@@ -3,7 +3,7 @@
 >
 > 将资源装载到Properties对象中，每项内容都当做String
 
-```
+```java
 Properties prop = new Properties();
 FileInputStream fis = new FileInputStream("test.properties");
 prop.load(fis);
