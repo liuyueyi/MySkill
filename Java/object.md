@@ -44,4 +44,15 @@ java也支持可变参数
 **使用： ** 最后一个参数类型后加..., 表名该形参可以接受多个参数值，且多个参数值是作为数组的形式传入进去的
 
 实例：
-
+```java
+public class Varags {
+    public satic void test(int a, String ... books) {
+        for(String book : books) {
+            System.out.println(book);
+        }
+    }
+    
+    public static void main(String[] args) {
+        test(5, "english book", "cook book");
+    }
+}
