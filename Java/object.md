@@ -1,7 +1,7 @@
 # object study
 > 对象的学习笔记
 
-## 一. function 
+## 一. 方法 function
 
 方法，类似c&c++的函数，但是只能放在类中，单独提来是因为： <font color="red">方法的参数都是值传递</font>
 
