@@ -59,3 +59,28 @@ public class Varags {
     }
 }
 ```
+
+## 二、Lambda表达式
+> JDK8已上才支持的版本
+
+用法： 用于快速实现函数式接口的抽象方法
+
+`MyInterface interface = (Type argu) -> { xxx };`
+
+等号后面的就是lambda表达式了，其中前面的为接口待实现的参数形式，后面的为具体的代码快，中间用->
+
+当代码块只有一个的时候，可以省略花括号，省略return
+
+```java
+public class Lam {
+    public static void main(String[] args) {
+        TT tt = (String name) -> name;
+        String name = tt.get("一灰");
+        System.out.println(name);
+    }
+}
+
+interface TT {
+    public String get(String name);
+}
+```
