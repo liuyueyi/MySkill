@@ -92,3 +92,38 @@ interface TT {
 > 枚举类型用法与C里面差别有些大，得多加注意
 
 用法和class差不多，需要注意的是，首行必须是所有的枚举常量，一逗号分割
+
+
+参考实例
+```java
+enum Season {
+    SPRING, SUMMER, AUTUMN, WINTER;
+
+    private String description;
+    public String getDescription() {
+        switch(this) {
+            case SPRING:
+                description = "春暖花开，踏青散步";
+                break;
+            case SUMMER:
+                description = "夏日炎炎，冲浪游泳";
+                break;
+            case AUTUMN:
+                dsecription = "秋高气爽，塞外写生";
+                break;
+            case WINTER:
+                description = "冬日飞雪，滑冰烧烤";
+                break;
+        }
+        return this.description;
+    }
+    
+}
+
+public class TT {
+    public static void main(String[] args) {
+        Season season = Season.valueOf("SPRING");
+        String description = season.getDescription();
+        System.out.println(description);
+    }
+}
