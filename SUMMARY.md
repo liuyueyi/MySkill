@@ -4,7 +4,7 @@
 * PHP
    * [String](string.md)
    * [Array](array.md)
-   * [Json](json.md)
+   * [Json](json.md/Json)
    * [Date](date.md)
 * Java
    * [Properties](properties.md)
