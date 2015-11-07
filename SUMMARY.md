@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-   * Sql
 * PHP
    * [String](string.md)
    * [Array](array.md)
