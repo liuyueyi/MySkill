@@ -1,8 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [PHP](array.md)
+* PHP
    * [String](string.md)
-   * [Array](array.md)
 * [Java](java.md)
 
