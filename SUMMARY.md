@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* 1. PHP
+* PHP
    * [String](string.md)
 * Java
    * [Properties](properties.md)
