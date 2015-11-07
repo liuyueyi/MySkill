@@ -8,7 +8,6 @@
    * [Date](datemd.md)
 * Java
    * [Properties](properties.md)
-   * 
 * Tools
    * [PopClip] (popClip.md)
 
