@@ -4,5 +4,5 @@
 * PHP
    * [String](string.md)
 * Java
-   * Properties
+   * [Properties](properties.md)
 
