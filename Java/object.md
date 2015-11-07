@@ -56,3 +56,4 @@ public class Varags {
         test(5, "english book", "cook book");
     }
 }
+```
