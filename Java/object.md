@@ -28,4 +28,9 @@ public class Test{
 ```
 上面的代码很简单，printA传入一个StringBuffer类型的参数，首先是打印出值，并追加一个字符串，随后将形参设置为null
 
-上面输出的结果实际是`
+上面输出的结果实际是
+```
+nihao
+nihao hello world
+```
+**解释：** 从上面的输出其实可以很清晰的看出，传过去的其实是值，即传过去的是buffer的一个拷贝，一个和buffer指向同一堆内数据的引用text，在printA函数中，修改堆内数据，那么指向该堆数据的buffer输出的值当然会改变；
