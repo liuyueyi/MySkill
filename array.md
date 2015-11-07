@@ -1,7 +1,7 @@
 # Array
 > php的数组无比强大，其中可以防止任意的对象
 
-1. 申明：  $items = [];   $items = array();   建议使用前者
+1. 申明：  `$items = [];   $items = array(); `  建议使用前者
 
 2. 判断是否在数组内
 
@@ -15,7 +15,7 @@
 	
 	**如果键名有重复，该键的键值为最后一个键名对应的值（后面的覆盖前面的）。如果数组是数字索引的，则键名会以连续方式重新索引。** 注意参数里面，显示申明一下参数为array类型
 	
-	```
+	```php
 	$array1 = array("color" => "red", 2, 4);
 	$array2 = array("a", "b", "color" => "green", "shape" => "trapezoid", 4);
 	$result = array_merge($array1, $array2);
