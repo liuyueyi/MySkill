@@ -57,5 +57,8 @@ rt.avaliableProcessors(); // 处理器数量
 rt.freeMemory(); //空闲内存数
 rt.totalMemory(); // 总内存数
 rt.maxMemory(); // 最大可用内存数
-
 ```
+
+上面其实就是访问JVM相关信息的方法
+
+可以单独启动进程来运行操作系统的命令:`rt.exec("notepad.exe");`
