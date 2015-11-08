@@ -102,6 +102,13 @@ Path处理路径，Files通过处理Path来处理文件
 import java.io.file.*;
 
 Path path = Paths.get("."); // 以当前路径创建对象
+path.getRoot(); // 获取根路径
+Path absolutePath = path.toAbsolutePath();
+absolutePath.getNameCount(); // 获取路径数量，如 /usr/yihui/Test.java 就有三层，返回3
+
+Path pp = Paths.get("C:", "publish", "codes");
+// 用后面的参数拼接出路径
+
 
 ```
 
