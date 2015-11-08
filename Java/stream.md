@@ -99,6 +99,8 @@ try{
 Path处理路径，Files通过处理Path来处理文件
 
 ```
+import java.io.file.*;
+
 Path path = Paths.get("."); // 以当前路径创建对象
 
 ```
