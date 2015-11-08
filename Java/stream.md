@@ -25,6 +25,6 @@
 - `deleteOnExit();` 注册一个删除钩子，程序over时删除
 - // 目录操作
 - `mkdir()`
-- `list()`
-- `listFiles()`
-- `listRootes()` 列出系统所有根路径，静态
+- `String[] list()` file对象的所有子文件名和路径名
+- `File[] listFiles()` file对象的所有子文件和路径
+- `listRootes()` 列出系统所有根路径，静态方法
