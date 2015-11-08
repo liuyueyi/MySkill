@@ -104,3 +104,7 @@ rand.nextFloat(); // 0.0 - 1.0 之间， 不包括1.0
 ```
 
 推荐使用方法： `rand = new Random(System.currentTimeMills());`
+
+
+### 4. 大数
+> BigDescimal
