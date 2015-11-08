@@ -125,5 +125,6 @@ b1.multiply(b2);
 b1.divide(b2);
 b1.pow(2);
 
-reutrn b1.doubleValue(); // double类型
+reutrn b1.doubleValue(); // double类型返回
 ```
+
