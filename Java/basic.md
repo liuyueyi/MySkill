@@ -133,7 +133,7 @@ reutrn b1.doubleValue(); // double类型返回
 ## 日期和时间
 
 ###1. Date类
-> 日期类，java.util.Date
+> java.util.Date, 用于处理日期和时间
 
 ```
 Date(); // 当前的日期，== new Date(System.currentTimeMillis());
@@ -141,3 +141,7 @@ Date(long time); // 时间戳初始化
 getTime(); // 返回对应的时间戳
 setTime(); // 设置时间
 ```
+
+###2. Calendar类
+> 抽象类，用于表示日历
+
