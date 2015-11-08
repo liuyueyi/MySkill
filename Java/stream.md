@@ -94,4 +94,9 @@ try{
 
 > 基于异步Channel的IO
 
+### Files和Paths
+```
+Path path = Paths.get("."); // 以当前路径创建对象
+
+```
 
