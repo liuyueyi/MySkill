@@ -48,4 +48,6 @@ public class Test{
   `System.identityHashCode(obj1);`
   
 ###2. Runtime 类
+#### - 说明：
+表示java程序的运行时环境，每个java程序都有一个与之对应的Runtime实例，程序不能创建，只能通过getRuntime()方法获取与之关联的Runtime对象
 
