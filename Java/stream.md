@@ -28,3 +28,5 @@
 - `String[] list()` file对象的所有子文件名和路径名
 - `File[] listFiles()` file对象的所有子文件和路径
 - `listRootes()` 列出系统所有根路径，静态方法
+
+### 2. 文件过滤器
