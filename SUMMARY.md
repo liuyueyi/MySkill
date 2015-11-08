@@ -10,6 +10,7 @@
    * [Object study](Java/object.md)
    * [Basic Class](Java/basic.md)
    * [Intput&Output Stream](Java/stream.md)
+   * [Thread & Process](Java/thread.md)
 * [Tools](Tools/README.md)
    * [Popclip](Tools/popclip.md)
 * [Shell](Shell/README.md)
