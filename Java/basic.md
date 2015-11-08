@@ -107,4 +107,14 @@ rand.nextFloat(); // 0.0 - 1.0 之间， 不包括1.0
 
 
 ### 4. 大数
-> BigDescimal
+> BigDecimal
+> 
+> 大数解决精度问题，特别在像支付宝这类的公司中。。。
+
+初始化方法： 
+```
+BigDecimal big = new BigDecimal("0.05"); // 不推荐
+BigDecimal big = new BigDecimal(0.05); // 不推荐
+BigDecimal big2 = BigDecimal.valueOf(0.05); // 强烈推荐
+
+```
