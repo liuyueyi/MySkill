@@ -62,3 +62,19 @@ rt.maxMemory(); // 最大可用内存数
 上面其实就是访问JVM相关信息的方法
 
 可以单独启动进程来运行操作系统的命令:`rt.exec("notepad.exe");`
+
+***
+
+## 常用类
+
+### 1. 字符串相关
+> String, StringBuffer, StringBuilder
+
+#### - 说明
+其中String为不可变类，一旦创建，则对象中的字符序列不可改变
+
+StringBuffer则代表一个字符序列可变的字符串，可以通过`append(), insert(), revert(), setCharAt(), setLength()`来修改其中的字符序列
+
+StringBuilder与上面的基本类似，唯一区别是上面的为线程安全，而StringBuilder则不是，故性能更优
+
+
