@@ -22,7 +22,12 @@ public class Test{
         // 保存所有属性值到指定的file中
         props.store(new FileOutputStream("props.txt"), "System properteis);
         // 获得特定的系统属性
-        String osName = System.getProperties("os.name");
+        String osName = System.getProperty("os.name");
     }
 }
 ```
+通过上面的实例，可以看出主要用的是`System.getenv(); System.getProperty();`
+
+#### 资源回收
+
+`System.gc(); System.runFinalization();`
