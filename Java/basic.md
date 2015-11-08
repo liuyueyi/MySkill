@@ -89,3 +89,6 @@ n次方： `pow(num, n);`
 最大最小， `max(...); min(...)`
 
 ### 3. 随机数
+> ThreadLocalRandom, Random
+
+
