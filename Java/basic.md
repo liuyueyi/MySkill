@@ -51,3 +51,11 @@ public class Test{
 #### - 说明：
 表示java程序的运行时环境，每个java程序都有一个与之对应的Runtime实例，程序不能创建，只能通过getRuntime()方法获取与之关联的Runtime对象
 
+```java
+Runtime rt = Runtime.getRuntime();
+rt.avaliableProcessors(); // 处理器数量
+rt.freeMemory(); //空闲内存数
+rt.totalMemory(); // 总内存数
+rt.maxMemory(); // 最大可用内存数
+
+```
