@@ -95,6 +95,9 @@ try{
 > 基于异步Channel的IO
 
 ### Files和Paths
+
+Paths处理路径，Files通过处理Path来处理文件
+
 ```
 Path path = Paths.get("."); // 以当前路径创建对象
 
