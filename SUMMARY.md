@@ -9,6 +9,7 @@
    * [Properties](Java/properties.md)
    * [Object study](Java/object.md)
    * [Basic Class](Java/basic.md)
+   * [Intput/Output Stream](Java/stream.md)
 * [Tools](Tools/README.md)
    * [Popclip](Tools/popclip.md)
 
