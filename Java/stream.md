@@ -85,3 +85,13 @@ try{
 > 将字节流转换为字符流
 >
 > BufferedReader, BufferedWriter
+
+
+***
+
+## 3. NIO.2
+> 更加全面的文件IO和文件系统访问支持
+
+> 基于异步Channel的IO
+
+
