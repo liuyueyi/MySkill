@@ -155,4 +155,4 @@ Files.walkFileTree(Paths.get("Test.java"), new SimpleFileVisitor<Path>() {
 - CONTINUE  继续访问
 - SKIP_SIBLINGS 继续访问，不访问该文件or目录的兄弟文件或目录
 - SKIP_SUBTREE 继续访问，但不访问该文件or该目录树
-- TERMINATE 终止
+- TERMINATE 终止访问
