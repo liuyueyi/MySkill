@@ -109,5 +109,16 @@ absolutePath.getNameCount(); // 获取路径数量，如 /usr/yihui/Test.java �
 // 用后面的参数拼接出路径
 Path pp = Paths.get("C:", "publish", "codes");
 
-```
+// Files 用于对文件的操作
+// 复制
+Files.copy(Paths.get("File1.java"), new FileOutputStream("NewFile.java"));
+// 判断是否隐藏
+Files.isHiden(Paths.get("File.java"));
+List<String> content = Files.readAllLines(Paths.get("Test.java"), Charset.forName("gbk"));
 
+Files.size(Paths.get(File.java)); // 文件大小
+
+Files.write(path, "写入的文字", Charset.forName("gbk"));
+
+
+```
