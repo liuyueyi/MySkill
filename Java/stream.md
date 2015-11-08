@@ -57,4 +57,5 @@ while((hasRead = stream.read(buf) > 0) {
     // 结束的时候，返回的是-1
     System.out.println(new String(buf, 0, hasRead));
 }
+stream.close(); // 关闭输入流 
 ```
