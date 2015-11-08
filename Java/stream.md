@@ -119,6 +119,13 @@ List<String> content = Files.readAllLines(Paths.get("Test.java"), Charset.forNam
 Files.size(Paths.get(File.java)); // 文件大小
 
 Files.write(path, "写入的文字", Charset.forName("gbk"));
-
-
 ```
+
+
+
+## 文件遍历
+
+> FileVistor 
+
+`walkFileTree(Path, FileVisotr<? super Path>)` 遍历path路径下的所有文件&目录
+
