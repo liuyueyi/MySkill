@@ -50,7 +50,8 @@ String[] files = file.list((dir, name) ->  name.endsWith("java") || new File(nam
 
 #### 基本用法
 ```
-InputStream stream = new FileInputStream("test.text");
+InputStream in = new FileInputStream("test.text");
+OutputStream out = new FileOutputStream("out.text");
 byte[] buf = new byte[1024];
 int hasRead = 0; // 实际读取的字节数
 while((hasRead = stream.read(buf) > 0) {
