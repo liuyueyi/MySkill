@@ -7,7 +7,8 @@
    * [String](PHP/string.md)
 * [Java Study](Java/README.md)
    * [Properties](Java/properties.md)
-   * [object study](Java/object.md)
+   * [Object study](Java/object.md)
+   * [Basic Class](Java/basic.md)
 * [Tools](Tools/README.md)
    * [Popclip](Tools/popclip.md)
 
