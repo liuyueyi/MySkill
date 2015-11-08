@@ -145,3 +145,13 @@ setTime(); // 设置时间
 ###2. Calendar类
 > 抽象类，用于表示日历
 
+与Date之间的相互转换
+
+```
+Calendar calendar = Calendar.getInstance(); // 默认对象
+Date date = calendar.getTime(); // 直接返回Date
+
+//必须先获得一个Calendar的对象
+Calendar calendar2 = Calendar.getInstance();
+calendar.setTime(date); 
+```
