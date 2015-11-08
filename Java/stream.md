@@ -129,7 +129,7 @@ Files.write(path, "写入的文字", Charset.forName("gbk"));
 
 `walkFileTree(Path, FileVisotr<? super Path>)` 遍历path路径下的所有文件&目录
 
-FileVisotr 是一个文件访问器，遍历文件和目录，会触发其中相应的方法
+FileVisitor 是一个文件访问器，遍历文件和目录，会触发其中相应的方法
 
 - `FileVisitResult postVisitDirectory(T dir, IOException exc)` 访问子目录之后触发
 - `FileVisiResult preVisitDirectory(T dir, BasicFileAttributes attrs)` 访问子目录之前触发
