@@ -11,15 +11,18 @@
 
 #### - 访问系统属性、环境变量
 ```java
-// 获取系统所有的环境变量
-Map<String, String> env = System.getenv();
-// 获取系统指定变量的值
-String jpath = System.getenv("JAVA_HOME");
-// 获取系统所有属性
-Propertes props = System.getProperties();
-// 保存所有属性值到指定的file中
-props.store(new FileOutputStream("props.txt"), "System properteis);
-// 获得特定的系统属性
-String osName = System.getProperties("os.name");
-
+public class Test{
+    public static function main(String[] args){
+        // 获取系统所有的环境变量
+        Map<String, String> env = System.getenv();
+        // 获取系统指定变量的值
+        String jpath = System.getenv("JAVA_HOME");
+        // 获取系统所有属性
+        Propertes props = System.getProperties();
+        // 保存所有属性值到指定的file中
+        props.store(new FileOutputStream("props.txt"), "System properteis);
+        // 获得特定的系统属性
+        String osName = System.getProperties("os.name");
+    }
+}
 ```
