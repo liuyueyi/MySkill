@@ -125,7 +125,7 @@ Files.write(path, "写入的文字", Charset.forName("gbk"));
 
 ## 文件遍历
 
-> FileVistor 
+> FileVisitor 
 
 `walkFileTree(Path, FileVisotr<? super Path>)` 遍历path路径下的所有文件&目录
 
@@ -148,3 +148,4 @@ Files.walkFileTree(Paths.get("Test.java"), new SimpleFileVisitor<Path>() {
     ...
 });
 ```
+即，在遍历的时候，重写FileVistor类
