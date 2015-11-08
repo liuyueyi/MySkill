@@ -39,4 +39,6 @@ String[] files = file.list(new FilenameFilter() {
         return ans;
     }
 });
+// lambda 进阶
+String[] files = file.list((dir, name) ->  name.endsWith("java") || new File(name).isDIrectory));
 ```
