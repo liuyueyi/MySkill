@@ -129,3 +129,22 @@ Files.write(path, "写入的文字", Charset.forName("gbk"));
 
 `walkFileTree(Path, FileVisotr<? super Path>)` 遍历path路径下的所有文件&目录
 
+FileVisotr 是一个文件访问器，遍历文件和目录，会触发其中相应的方法
+
+- `FileVisitResult postVisitDirectory(T dir, IOException exc)` 访问子目录之后触发
+- `FileVisiResult preVisitDirectory(T dir, BasicFileAttributes attrs)` 访问子目录之前触发
+- `FileVisitResult vistFile(T file, BasicFileAttributes attr)` 访问文件时触发
+- `FileVisitResult visitFileFailed(T file, IOException exc)` 访问失败时触发
+
+所以在使用的时候，一般是：
+
+```java
+Files.walkFileTree(Paths.get("Test.java"), new SimpleFileVisitor<Path>() {
+    @Override
+    public FileVisitResult visitFiles(Path file, BasicFileAttributes attrs) throws IOException {
+        ....
+        return FileVisitResult.CONTINUE;
+    }
+    ...
+});
+```
