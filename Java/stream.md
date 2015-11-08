@@ -35,7 +35,7 @@ list方法中可以接受一个FilenameFilter函数接口，进行过滤
 String[] files = file.list(new FilenameFilter() {
     @Override
     public boolean accept(File dir, String name) {
-        boolean ans =  name.endsWith(".md") || new File(name).isDirectory();
+        boolean ans =  name.endsWith(".java") || new File(name).isDirectory();
         return ans;
     }
 });
