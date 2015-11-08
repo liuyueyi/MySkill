@@ -22,4 +22,4 @@
 - `createNewFile()` 创建
 - `delete()`
 - `createTempFiles(String prefix, String suffix, File direcotry = null); ` 临时文件
-- 
+- `deleteOnExit();` 注册一个删除钩子，程序over时删除
