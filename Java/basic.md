@@ -88,7 +88,19 @@ n次方： `pow(num, n);`
 
 最大最小， `max(...); min(...)`
 
+生成随机数， [0.0, 1.0) `Math.random();`
+
 ### 3. 随机数
 > ThreadLocalRandom, Random
 
+> 用于生成随机数, 前面一个是可以用在多线程并发环境下，减少资源竞争
 
+```java
+// 采用当前的时间点作为随机种子，也可以在参数中传入long进行指定
+Random rand = new Random(); 
+rand.nextInt(); // int范围内的整数
+rand.nextInt(26); //  0 - 26之间，不包括26
+rand.nextFloat(); // 0.0 - 1.0 之间， 不包括1.0
+```
+
+推荐使用方法： `rand = new Random(System.currentTimeMills());`
