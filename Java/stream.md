@@ -148,4 +148,11 @@ Files.walkFileTree(Paths.get("Test.java"), new SimpleFileVisitor<Path>() {
     ...
 });
 ```
-即，在遍历的时候，重写FileVistor类
+即，在遍历的时候，重写FileVistor类, 主要是上面提到的四个方法
+
+返回的FileVisitResult是一个枚举类
+
+- CONTINUE  继续访问
+- SKIP_SIBLINGS 继续访问，不访问该文件or目录的兄弟文件或目录
+- SKIP_SUBTREE 继续访问，但不访问该文件or该目录树
+- TERMINATE 终止
