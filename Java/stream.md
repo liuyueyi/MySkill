@@ -54,7 +54,7 @@ InputStream in = new FileInputStream("in.text");
 OutputStream out = new FileOutputStream("out.text");
 byte[] buf = new byte[1024];
 int hasRead = 0; // 实际读取的字节数
-while((hasRead = stream.read(buf) > 0) {
+while((hasRead = in.read(buf) > 0) {
     // 结束的时候，返回的是-1
     System.out.println(new String(buf, 0, hasRead));
 }
