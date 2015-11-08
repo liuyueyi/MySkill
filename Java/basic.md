@@ -77,4 +77,7 @@ StringBuffer则代表一个字符序列可变的字符串，可以通过`append(
 
 StringBuilder与上面的基本类似，唯一区别是上面的为线程安全，而StringBuilder则不是，故性能更优
 
+常用的方法就不贴出来了，可以查看API
+
+### 2. Math
 
