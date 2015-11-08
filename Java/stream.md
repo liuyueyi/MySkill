@@ -48,7 +48,7 @@ String[] files = file.list((dir, name) ->  name.endsWith("java") || new File(nam
 >
 > InputStream, outputSteam 和 Reader，Wirte的区别在于前者输入输出都是字节（Byte）后者为字符（Char）
 
-#### 基本用法， read，write
+#### 基本用法： read，write
 
 ```java
 try{
