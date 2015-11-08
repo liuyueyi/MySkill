@@ -36,7 +36,6 @@ String[] files = file.list(new FilenameFilter() {
     @Override
     public boolean accept(File dir, String name) {
         boolean ans =  name.endsWith(".md") || new File(name).isDirectory();
-        System.out.println("dir is : " + dir + "name is : ----> " + name + " true？ " + ans);
         return ans;
     }
 });
