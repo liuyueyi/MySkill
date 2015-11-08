@@ -57,6 +57,7 @@ int hasRead = 0; // 实际读取的字节数
 while((hasRead = in.read(buf) > 0) {
     // 结束的时候，返回的是-1
     System.out.println(new String(buf, 0, hasRead));
+    out.write(buf);
 }
 stream.close(); // 关闭输入流 
 ```
