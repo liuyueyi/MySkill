@@ -23,3 +23,8 @@
 - `delete()`
 - `createTempFiles(String prefix, String suffix, File direcotry = null); ` 临时文件
 - `deleteOnExit();` 注册一个删除钩子，程序over时删除
+- // 目录操作
+- `mkdir()`
+- `list()`
+- `listFiles()`
+- `listRootes()` 列出系统所有根路径，静态
