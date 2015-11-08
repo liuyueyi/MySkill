@@ -28,6 +28,24 @@ public class Test{
 ```
 通过上面的实例，可以看出主要用的是`System.getenv(); System.getProperty();`
 
-#### 资源回收
+#### - 其他
 
-`System.gc(); System.runFinalization();`
+1. 资源回收 ： 
+
+  `System.gc(); System.runFinalization();`
+
+2. 获取时间戳:
+    
+  微秒： `System.currentTimeMillis(); `
+
+  纳秒： `System.nanoTime();`
+
+3. hashCode
+
+  hashCode是根据对象的地址进行计算得到的值，如果一个类的hashCode被重写后，该类实例的hashCode方法就不能唯一标识该对象；
+  但是通过`identityHashCode()`方法返回的hashCode值， 依然是根据改对象的地址计算的，如果两个对象的identityHashCode值相同，则表示两个对象绝对是同一个
+  
+  `System.identityHashCode(obj1);`
+  
+###2. Runtime 类
+
