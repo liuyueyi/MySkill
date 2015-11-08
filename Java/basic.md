@@ -124,4 +124,6 @@ b2.subtract(b3);
 b1.multiply(b2);
 b1.divide(b2);
 b1.pow(2);
+
+reutrn b1.doubleValue(); // double类型
 ```
