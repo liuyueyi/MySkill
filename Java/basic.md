@@ -177,3 +177,12 @@ add和roll的区别：
 - LocalTime: 不带时区的时间
 - Duration: 持续时间，可以方便的将时间戳进行转换
 - Instant: 具体的时间，可以精确到纳秒，静态方法now可以获取当前时刻
+
+```java
+Duration d = new Duration(6000);
+d.toMinutes(); // 6000s转分钟
+d.toDay();
+```
+
+### 3. Java8 日期、时间格式转换
+> DateTimeFormatter
