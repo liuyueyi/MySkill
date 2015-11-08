@@ -149,7 +149,7 @@ setTime(); // 设置时间
 
 ```
 Calendar calendar = Calendar.getInstance(); // 默认对象
-Date date = calendar.getTime(); // 直接返回Date
+Date date = calendar.getTime(); // 直接返回Date对象
 
 //必须先获得一个Calendar的对象
 Calendar calendar2 = Calendar.getInstance();
