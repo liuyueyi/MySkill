@@ -109,7 +109,5 @@ absolutePath.getNameCount(); // 获取路径数量，如 /usr/yihui/Test.java �
 // 用后面的参数拼接出路径
 Path pp = Paths.get("C:", "publish", "codes");
 
-
-
 ```
 
