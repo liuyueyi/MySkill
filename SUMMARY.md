@@ -12,4 +12,6 @@
    * [Intput&Output Stream](Java/stream.md)
 * [Tools](Tools/README.md)
    * [Popclip](Tools/popclip.md)
+* [Shell](Shell/README.md)
+   * [Terminal](Shell/terminal.md)
 
