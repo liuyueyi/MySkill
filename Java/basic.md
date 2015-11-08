@@ -113,8 +113,15 @@ rand.nextFloat(); // 0.0 - 1.0 之间， 不包括1.0
 
 初始化方法： 
 ```
-BigDecimal big = new BigDecimal("0.05"); // 不推荐
-BigDecimal big = new BigDecimal(0.05); // 不推荐
-BigDecimal big2 = BigDecimal.valueOf(0.05); // 强烈推荐
-
+BigDecimal big1 = new BigDecimal("0.05"); 
+BigDecimal big2 = new BigDecimal(0.05); // 不推荐
+BigDecimal big3 = BigDecimal.valueOf(0.05); // 强烈推荐
+```
+加减乘除
+```
+b1.add(b2);
+b2.subtract(b3);
+b1.multiply(b2);
+b1.divide(b2);
+b1.pow(2);
 ```
