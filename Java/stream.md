@@ -49,15 +49,20 @@ String[] files = file.list((dir, name) ->  name.endsWith("java") || new File(nam
 > InputStream, outputSteam 和 Reader，Wirte的区别在于前者输入输出都是字节（Byte）后者为字符（Char）
 
 #### 基本用法
-```
-InputStream in = new FileInputStream("in.text");
-OutputStream out = new FileOutputStream("out.text");
-byte[] buf = new byte[1024];
-int hasRead = 0; // 实际读取的字节数
-while((hasRead = in.read(buf) > 0) {
-    // 结束的时候，返回的是-1
-    System.out.println(new String(buf, 0, hasRead));
-    out.write(buf, 0, hasRead);
+
+```java
+try{
+    InputStream in = new FileInputStream("in.text");
+    OutputStream out = new FileOutputStream("out.text");
+    byte[] buf = new byte[1024];
+    int hasRead = 0; // 实际读取的字节数
+    while((hasRead = in.read(buf) > 0) {
+        // 结束的时候，返回的是-1
+        System.out.println(new String(buf, 0, hasRead));
+        out.write(buf, 0, hasRead);
+    }
+    stream.close(); // 关闭输入流 
+} catch (Exception e) {
+    ...
 }
-stream.close(); // 关闭输入流 
 ```
