@@ -4,7 +4,7 @@
 ## 1. File
 > 文件类
 
-### 1. 常用方法
+### 常用方法
 - `getName() ` : 文件名，若是根据路径创建的对象，则返回最后一级别的路径
 - `getPath()` : 返回路径
 - `getAbsolutePath()`: 绝对路径
@@ -29,7 +29,7 @@
 - `File[] listFiles()` file对象的所有子文件和路径
 - `listRootes()` 列出系统所有根路径，静态方法
 
-### 2. 文件过滤器
+### 文件过滤器
 list方法中可以接受一个FilenameFilter函数接口，进行过滤
 ```java
 String[] files = file.list(new FilenameFilter() {
@@ -41,4 +41,20 @@ String[] files = file.list(new FilenameFilter() {
 });
 // lambda 进阶
 String[] files = file.list((dir, name) ->  name.endsWith("java") || new File(name).isDIrectory));
+```
+
+### 2. Stream, Reader, Writer
+> 输入输出流均为接口形式，需要根据实际情况实例化
+>
+> InputStream, outputSteam 和 Reader，Wirte的区别在于前者输入输出都是字节（Byte）后者为字符（Char）
+
+#### 基本用法
+```
+InputStream stream = new FileInputStream("test.text");
+byte[] buf = new byte[1024];
+int hasRead = 0; // 实际读取的字节数
+while((hasRead = stream.read(buf) > 0) {
+    // 结束的时候，返回的是-1
+    System.out.println(new String(buf, 0, hasRead));
+}
 ```
