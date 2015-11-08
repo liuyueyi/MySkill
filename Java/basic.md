@@ -145,7 +145,7 @@ setTime(); // 设置时间
 ###2. Calendar类
 > 抽象类，用于表示日历
 
-与Date之间的相互转换
+#### 1. 与Date之间的相互转换
 
 ```
 Calendar calendar = Calendar.getInstance(); // 默认对象
@@ -155,3 +155,17 @@ Date date = calendar.getTime(); // 直接返回Date对象
 Calendar calendar2 = Calendar.getInstance();
 calendar.setTime(date); 
 ```
+
+#### 2. 常用方法
+```
+get(int field); // 获得对应字段的值，如 get(YEAR)
+set(int filed, int value); // set(YEAR, 2015); 设年为2015
+add(field, value); // 修改某个字段的值，正为加，负为减
+roll(field, value); // 同样是修改
+```
+
+add和roll的区别：
+
+当发生进位的时候，如 add(MONTH, 11) 会将前面的年加1，如果下一级别也需要改变，如原来日期为2003-7-31，加了6个月后，变成2004-2-29，
+
+而roll则不会，只会处理下一级别的字段
