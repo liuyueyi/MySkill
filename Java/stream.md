@@ -70,3 +70,18 @@ try{
 #### 处理流
 > 利用处理流来包装上面的节点流，程序通过处理流来执行输入输出功能，让节点流与底层IO设备，文件交互
 
+下面的代码也很明显的可以看出优越性，不用关心输出流的关闭
+```java
+try{
+    FileOutputStream out = new FileOutputStream("out.text");
+    PrintStream ps = new PrintStream(out);
+    ps.println("输出普通");
+} catch (Exception e) {
+
+}
+```
+
+#### 转换流
+> 将字节流转换为字符流
+>
+> BufferedReader, BufferedWriter
