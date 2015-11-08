@@ -106,8 +106,9 @@ path.getRoot(); // 获取根路径
 Path absolutePath = path.toAbsolutePath();
 absolutePath.getNameCount(); // 获取路径数量，如 /usr/yihui/Test.java 就有三层，返回3
 
-Path pp = Paths.get("C:", "publish", "codes");
 // 用后面的参数拼接出路径
+Path pp = Paths.get("C:", "publish", "codes");
+
 
 
 ```
