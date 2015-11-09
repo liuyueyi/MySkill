@@ -109,3 +109,5 @@ Synchronized(Account) {
 ```
 
 2. Lock 锁
+
+Lock对象，再需要加锁的代码块前调用 lock.lock(); 执行完毕后，调用 lock.unlock() 解锁
