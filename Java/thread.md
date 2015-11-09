@@ -111,3 +111,13 @@ Synchronized(Account) {
 2. Lock 锁
 
 Lock对象，再需要加锁的代码块前调用 lock.lock(); 执行完毕后，调用 lock.unlock() 解锁
+
+再加锁、解锁的过程中，需要格外注意，死锁的情况
+
+
+## 3. 线程通信
+> 这个主要是利用Object对象的 `wait(); notify(); notifyAll()` 三个函数来实现
+
+对于同步代码快里面，线程通信的调用方为Sychronized括号中的对象； 而同步方法则是该类
+
+对应Lock的地方呢？这就需要Condition来
