@@ -121,5 +121,5 @@ Lock对象，再需要加锁的代码块前调用 lock.lock(); 执行完毕后�
 - 对于同步代码快里面，线程通信的调用方为Sychronized括号中的对象； 而同步方法则是该类
 
 - 对应Lock的地方呢？这就需要Condition来实现，首先是利用 `lock.newCondition();`获取Condition对象，然后调用 `condition.wait(); condition.signal(); condition.signalAll()` 来实现
-- 
+
 
