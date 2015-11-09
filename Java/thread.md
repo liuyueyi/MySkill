@@ -80,3 +80,6 @@ class MyCallable implements Callable<Integer> {
 ```
 
 这里是利用Future来获取返回值
+
+## 2. 线程安全
+> 当多个线程同时访问公共资源时，可能出现问题
