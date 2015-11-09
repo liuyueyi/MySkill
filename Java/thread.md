@@ -99,9 +99,9 @@ class MyCallable implements Callable<Integer> {
 
 - 利用同步代码块，or 同步类 `Synchronized`
 
-将需要同步的代码块，包裹在 Synchronized(对象)之间，再线程访问该区域代码时，其他线程会等待
+  将需要同步的代码块，包裹在 Synchronized(对象)之间，再线程访问该区域代码时，其他线程会等待
 
-```
+  ```
 Synchronized(Account) {
     // 判断是否可以取钱
     // 取钱
