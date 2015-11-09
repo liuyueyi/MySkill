@@ -128,3 +128,8 @@ Synchronized(Account) {
 
 ## 4.线程池
 > Executor的类方法来创建线程池，ExecutorServie,然后将线程提交的线程池中，就由线程池来管理线程的执行
+
+```java
+
+
+```
