@@ -97,7 +97,7 @@ class MyCallable implements Callable<Integer> {
 
 ### 解决？
 
-利用同步代码块，or 同步类 `Synchronized`
+- 利用同步代码块，or 同步类 `Synchronized`
 
 将需要同步的代码块，包裹在 Synchronized(对象)之间，再线程访问该区域代码时，其他线程会等待
 
@@ -109,7 +109,7 @@ Synchronized(Account) {
 }
 ```
 
-2. Lock 锁
+- Lock 锁
 
 Lock对象，再需要加锁的代码块前调用 lock.lock(); 执行完毕后，调用 lock.unlock() 解锁
 
