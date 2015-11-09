@@ -126,3 +126,5 @@ Synchronized(Account) {
 - 对应Lock的地方呢？这就需要Condition来实现，首先是利用 `lock.newCondition();`获取Condition对象，然后调用 `condition.wait(); condition.signal(); condition.signalAll()` 来实现
 
 
+## 4.线程池
+> Executor的类方法来创建线程池，ExecutorServie,然后将线程提交的线程池中，就由线程池来管理线程的执行
