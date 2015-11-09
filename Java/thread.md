@@ -130,6 +130,30 @@ Synchronized(Account) {
 > Executor的类方法来创建线程池，ExecutorServie,然后将线程提交的线程池中，就由线程池来管理线程的执行
 
 ```java
+class MyCallable implements Callable<Integer> {
+    @Override
+    public Integer call() {
+        Integer sum = 0;
+        for(int i = 0; i < 100; i++) {
+            System.out.println(Thread.currentThread().getName() + " i ");
+            sum += i;
+        }
+        return sum;
+    }
 
+    public static void main(String[] args) {
+        FutureTask<Integer> task = new FutureTask<Integer>(new MyCallable());
+        new Thread(task, "有返回值").start();
 
+        try{
+            System.out.println("子线程的返回值为: " + task.get());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        ExecutorService pool = Executors.newFixedThreadPool(8);
+        pool.submit(task); // 向线程池中提交线程
+        pool.shutdown(); // 关闭线程池
+    }
+}
 ```
