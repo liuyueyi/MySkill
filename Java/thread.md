@@ -106,5 +106,4 @@ Synchronized(Account) {
     // 取钱
     // 减少余额
 }
-
 ```
