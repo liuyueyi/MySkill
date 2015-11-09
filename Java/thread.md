@@ -118,6 +118,8 @@ Lock对象，再需要加锁的代码块前调用 lock.lock(); 执行完毕后�
 ## 3. 线程通信
 > 这个主要是利用Object对象的 `wait(); notify(); notifyAll()` 三个函数来实现
 
-对于同步代码快里面，线程通信的调用方为Sychronized括号中的对象； 而同步方法则是该类
+- 对于同步代码快里面，线程通信的调用方为Sychronized括号中的对象； 而同步方法则是该类
 
-对应Lock的地方呢？这就需要Condition来
+- 对应Lock的地方呢？这就需要Condition来实现，首先是利用 `lock.newCondition();`获取Condition对象，然后调用 `condition.wait(); condition.signal(); condition.signalAll()` 来实现
+- 
+
