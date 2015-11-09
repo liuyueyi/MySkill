@@ -98,7 +98,7 @@ class MyCallable implements Callable<Integer> {
 ### 解决？
 1. 利用同步代码块，or 同步类 `Synchronized`
 
-将需要同步的代码块，包裹在 Synchronized(对象)之间
+将需要同步的代码块，包裹在 Synchronized(对象)之间，再线程访问该区域代码时，其他线程会等待
 
 ```
 Synchronized(Account) {
@@ -107,3 +107,4 @@ Synchronized(Account) {
     // 减少余额
 }
 ```
+
