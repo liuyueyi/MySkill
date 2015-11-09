@@ -26,3 +26,26 @@ class MyThread extends Thread {
     }
 }
 ```
+
+- 从上面的代码也可以看出，通过继承Thread方法，简单粗暴，问题就是Java只能单继承，这种方式就不能再继承其他的类了
+
+### Runnable
+
+是一个接口，其实和上面没什么区别，只是调用方式有点不一样
+
+```java
+class MyThread implements Runnable {
+    @Override
+    public void run() {
+        for(int i = 0; i < 100; i++) {
+            System.out.println(Thread.currentThread().getName() + " i ");
+        }
+    }
+
+    public static void main(String[] args) {
+        MyThread thread = new MyThread();
+        new Thread(thread, "线程1").start();
+        new Thread(thread, "线程2").start();
+    }
+}
+```
