@@ -1,4 +1,4 @@
-# My Awesome Book
+# MY STUDY
 
 用来记录个人在日常工作学习中get的小技能
 
